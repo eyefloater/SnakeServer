@@ -2,23 +2,23 @@ package com.gaby;
 
 public class SnakeGame {
 
-	private String first;
-	private String second;
+	private String firstPlayer;
+	private String secondPlayer;
 
-	public String getFirst() {
-		return first;
+	public String getFirstPlayer() {
+		return firstPlayer;
 	}
 
-	public void setFirst(String first) {
-		this.first = first;
+	public void setFirstPlayer(String firstPlayer) {
+		this.firstPlayer = firstPlayer;
 	}
 
-	public String getSecond() {
-		return second;
+	public String getSecondPlayer() {
+		return secondPlayer;
 	}
 
-	public void setSecond(String second) {
-		this.second = second;
+	public void setSecondPlayer(String secondPlayer) {
+		this.secondPlayer = secondPlayer;
 	}
 
 }

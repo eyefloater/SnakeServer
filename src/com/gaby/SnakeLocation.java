@@ -52,7 +52,7 @@ public class SnakeLocation extends javax.servlet.http.HttpServlet implements
 		String otherUser = SnakeDb.getOtherUser(userStr);
 		if (otherUser != null) {
 			Point loc = SnakeDb.getLocationOtherUser(otherUser);
-			if (loc != null)	{
+			if (loc != null) {
 				response.setHeader("locx", "" + loc.x);
 				response.setHeader("locy", "" + loc.y);
 				response.setHeader("user", otherUser);

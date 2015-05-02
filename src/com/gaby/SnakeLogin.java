@@ -16,6 +16,7 @@ public class SnakeLogin extends javax.servlet.http.HttpServlet implements
 	private static final long serialVersionUID = 1L;
 	private static final String USER = "user";
 	private static final String PW = "pw";
+	private static final String NUMBER_OF_PLAYERS = "1";
 
 	public SnakeLogin() {
 		super();
@@ -33,11 +34,13 @@ public class SnakeLogin extends javax.servlet.http.HttpServlet implements
 
 		String userName = request.getParameter(USER);
 		String password = request.getParameter(PW);
+		String numberOfPlayers = request.getParameter(NUMBER_OF_PLAYERS);
 		HttpSession session = request.getSession(true);
 		session.setAttribute(USER, userName);
+		session.setAttribute(NUMBER_OF_PLAYERS, numberOfPlayers);
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		if (SnakeUser.validateUser(userName, password))	{
+		if (SnakeUser.validateUser(userName, password)) {
 			out.println("Snake Login says: Hi \"" + userName
 					+ "\", \" ready to play?");
 			Cookie cookie = new Cookie("user", userName);
