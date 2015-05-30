@@ -30,6 +30,15 @@ public class SnakeDb {
 		userInfo.put("gab", "1234");
 		userInfo.put("dav", "4321");
 	}
+	
+	public void SetSnakeDbName() {
+		String snakeDbName = "snakeDataBase v.0.1";
+	}
+	
+	public String GetSnakeDbName() {
+		String snakeDbName = "snakeDataBase v.0.1";
+		return snakeDbName;
+	}
 
 	// public boolean checkUser(String){
 	// if String

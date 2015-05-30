@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="io.shamanic.snakedb.Mapper">
+ 
+    <select id="getSnakeUser" parameterType="string" resultType="io.shamanic.snakedb.SnakeUser">
+        select * from snakeuser where snakeuser = #{snakeuser}
+    </select>
+ 
+    <select id="getEmail" parameterType="string" resultType="io.shamanic.snakedb.SnakeUser">
+        select email from snakeuser where snakeuser = #{snakeuser}
+    </select>
+    
+    <select id="getSnakeGame" parameterType="string" resultType="io.shamanic.snakedb.SnakeGame">
+        select * from snakegame where id = #{id}
+    </select>
+    
+</mapper>

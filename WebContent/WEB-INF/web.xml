@@ -26,4 +26,13 @@
 		<servlet-name>SnakeLocation</servlet-name>
 		<url-pattern>/location</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>com.gaby.AdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+
 </web-app>
